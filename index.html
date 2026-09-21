@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>GEM AI</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <div class="app">
+
+        <header>
+
+            <div class="logo">
+                GEM
+            </div>
+
+            <div>
+                <h1>GEM AI</h1>
+                <p>Your intelligent assistant</p>
+            </div>
+
+        </header>
+
+
+        <main id="chat">
+
+            <div class="message gem-message">
+
+                <div class="avatar">
+                    G
+                </div>
+
+                <div class="bubble">
+
+                    Hey! I'm <strong>GEM</strong> ✨
+                    <br><br>
+                    Ask me anything.
+
+                </div>
+
+            </div>
+
+        </main>
+
+
+        <div class="typing" id="typing">
+            GEM is thinking...
+        </div>
+
+
+        <form id="chatForm">
+
+            <input
+                type="text"
+                id="messageInput"
+                placeholder="Ask GEM anything..."
+                autocomplete="off"
+            >
+
+            <button type="submit">
+                ➤
+            </button>
+
+        </form>
+
+    </div>
+
+
+    <script src="{{ url_for('static', filename='script.js') }}">
+    </script>
+
+</body>
+
+</html>
